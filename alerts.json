@@ -44,5 +44,17 @@
     "maxPrice": 60,
     "currency": "USD",
     "addedAt": "2026-03-17T21:15:00.840Z"
+  },
+  {
+    "id": 1773782125760,
+    "type": "price_drop",
+    "releaseId": 2065948,
+    "title": "Da Sunlounge - Skin Tight EP",
+    "year": 2009,
+    "country": "UK",
+    "thumb": "https://i.discogs.com/aJsv2vD2LKjBIFbNMleSOw3U2X-xO8yUnVPV0VgdvSs/rs:fit/g:sm/q:90/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNjU5/NDgtMTI2MTk3NDk1/NS5qcGVn.jpeg",
+    "maxPrice": 40,
+    "currency": "USD",
+    "addedAt": "2026-03-17T21:15:25.760Z"
   }
 ]
