@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discogs Alertas</title>
+<style>
+  :root {
+    --bg: #f5f3ef;
+    --card: #ffffff;
+    --border: #e0dcd5;
+    --text: #1a1a1a;
+    --muted: #6b6b6b;
+    --accent: #f76b15;
+    --accent-light: #fff3ec;
+    --green: #1a7f4b;
+    --green-light: #e8f5ee;
+    --red: #c0392b;
+    --red-light: #fdf0ef;
+    --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  header { background: var(--card); border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; gap: 12px; position: sticky; top: 0; z-index: 10; }
+  .logo { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+  .logo svg { width: 18px; height: 18px; fill: white; }
+  header h1 { font-size: 18px; font-weight: 600; }
+  header span { font-size: 13px; color: var(--muted); margin-left: auto; }
+  .container { max-width: 860px; margin: 0 auto; padding: 24px 16px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 24px; box-shadow: var(--shadow); }
+  .card h2 { font-size: 15px; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .step-badge { background: var(--accent); color: white; border-radius: 50%; width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 600px) { .fields { grid-template-columns: 1fr; } }
+  label { font-size: 13px; color: var(--muted); display: block; margin-bottom: 4px; }
+  input, select { width: 100%; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; background: var(--bg); color: var(--text); outline: none; transition: border-color .15s; }
+  input:focus, select:focus { border-color: var(--accent); }
+  .btn { background: var(--accent); color: white; border: none; border-radius: 8px; padding: 10px 18px; font-size: 14px; font-weight: 600; cursor: pointer; transition: opacity .15s; }
+  .btn:hover { opacity: .88; }
+  .btn-sm { padding: 6px 12px; font-size: 13px; border-radius: 6px; }
+  .btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text); }
+  .btn-outline:hover { background: var(--bg); opacity: 1; }
+  .btn-green { background: var(--green); }
+  .save-row { margin-top: 16px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .status-msg { font-size: 13px; display: none; }
+  .status-msg.show { display: block; }
+  .section-hint { font-size: 12px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+  .tg-link { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .tg-link:hover { text-decoration: underline; }
+  .connected-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--green-light); color: var(--green); border-radius: 20px; padding: 4px 12px; font-size: 12px; font-weight: 600; }
+  .dot { width: 7px; height: 7px; background: var(--green); border-radius: 50%; }
+  .search-row { display: flex; gap: 8px; }
+  .search-row input { flex: 1; }
+  .results-list { margin-top: 16px; display: flex; flex-direction: column; gap: 10px; }
+  .result-item { display: flex; align-items: center; gap: 14px; padding: 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg); }
+  .result-thumb { width: 52px; height: 52px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+  .result-thumb-placeholder { width: 52px; height: 52px; border-radius: 6px; background: var(--border); flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .result-info { flex: 1; min-width: 0; }
+  .result-title { font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .result-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .result-copies { font-size: 12px; margin-top: 4px; }
+  .copies-ok { color: var(--green); }
+  .copies-none { color: var(--red); }
+  .result-actions { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; flex-shrink: 0; }
+  .price-input-wrap { display: flex; align-items: center; gap: 4px; }
+  .price-input-wrap span { font-size: 13px; color: var(--muted); }
+  .price-input-wrap input { width: 72px; text-align: right; padding: 5px 8px; font-size: 13px; }
+  .alert-item { display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid var(--border); border-radius: 10px; margin-bottom: 8px; }
+  .alert-badge { font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 20px; flex-shrink: 0; }
+  .badge-new { background: var(--red-light); color: var(--red); }
+  .badge-price { background: var(--green-light); color: var(--green); }
+  .alert-info { flex: 1; min-width: 0; }
+  .alert-title { font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .alert-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .btn-delete { background: none; border: none; cursor: pointer; color: var(--muted); font-size: 18px; padding: 0 4px; line-height: 1; }
+  .btn-delete:hover { color: var(--red); }
+  .empty-state { text-align: center; padding: 32px 0; color: var(--muted); font-size: 14px; }
+  .loader { display: none; width: 18px; height: 18px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin .7s linear infinite; }
+  .loader.show { display: inline-block; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .sync-bar { background: var(--green-light); border: 1px solid #a8d5bc; border-radius: 10px; padding: 12px 16px; margin-bottom: 24px; display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--green); display: none; }
+  .sync-bar.show { display: flex; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3" fill="#f76b15"/></svg></div>
+  <h1>Discogs Alertas</h1>
+  <span id="connected-status"></span>
+</header>
+
+<div class="container">
+
+  <div class="sync-bar" id="sync-bar">
+    ✓ Alertas sincronizadas con GitHub — Railway las chequeará en la próxima hora
+  </div>
+
+  <!-- Config -->
+  <div class="card">
+    <h2><span class="step-badge">1</span> Configuración</h2>
+    <div class="fields">
+      <div><label>Token de Telegram Bot</label><input type="password" id="tg-token" placeholder="123456:ABCdef..."/></div>
+      <div><label>Tu Chat ID de Telegram</label><input type="text" id="tg-chatid" placeholder="987654321"/></div>
+      <div><label>Discogs API Token</label><input type="password" id="dc-token" placeholder="Tu token de Discogs"/></div>
+      <div><label>Moneda</label>
+        <select id="currency">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="ARS">ARS</option>
+        </select>
+      </div>
+      <div><label>GitHub Token (para sync automático)</label><input type="password" id="gh-token" placeholder="ghp_..."/></div>
+      <div>
+        <label>GitHub repo (usuario/repo)</label>
+        <input type="text" id="gh-repo" placeholder="camimarquisio09/marquisharkk_bot"/>
+      </div>
+    </div>
+    <p class="section-hint">
+      🤖 Bot: <a class="tg-link" href="https://t.me/BotFather" target="_blank">@BotFather</a> → /newbot &nbsp;|&nbsp;
+      🪪 Chat ID: <a class="tg-link" href="https://t.me/userinfobot" target="_blank">@userinfobot</a> &nbsp;|&nbsp;
+      🔑 Discogs: <a class="tg-link" href="https://www.discogs.com/settings/developers" target="_blank">discogs.com/settings/developers</a> &nbsp;|&nbsp;
+      🐙 GitHub token: <a class="tg-link" href="https://github.com/settings/tokens" target="_blank">github.com/settings/tokens</a> (scope: repo)
+    </p>
+    <div class="save-row">
+      <button class="btn btn-sm" onclick="saveConfig()">Guardar</button>
+      <button class="btn btn-sm btn-outline" onclick="testTelegram()">🔔 Probar Telegram</button>
+      <div class="loader" id="cfg-loader"></div>
+      <span class="status-msg" id="config-saved" style="color:var(--green)">✓ Guardado</span>
+      <span class="status-msg" id="test-ok" style="color:var(--green)">✓ ¡Mensaje enviado!</span>
+      <span class="status-msg" id="test-fail" style="color:var(--red)">✗ Error — revisá los tokens</span>
+    </div>
+  </div>
+
+  <!-- Buscar -->
+  <div class="card">
+    <h2>🔍 Buscar disco</h2>
+    <div class="search-row">
+      <input type="text" id="search-input" placeholder="Artista, álbum..." onkeydown="if(event.key==='Enter')searchDiscs()"/>
+      <button class="btn" onclick="searchDiscs()">Buscar</button>
+      <div class="loader" id="search-loader"></div>
+    </div>
+    <div class="results-list" id="results-list"></div>
+  </div>
+
+  <!-- Alertas -->
+  <div class="card">
+    <h2>🔔 Mis alertas
+      <button class="btn btn-sm btn-green" style="margin-left:auto" onclick="syncToGitHub()">☁️ Guardar en Railway</button>
+      <div class="loader" id="sync-loader"></div>
+    </h2>
+    <div id="alerts-list"></div>
+  </div>
+
+</div>
+
+<script>
+let config = JSON.parse(localStorage.getItem('dc_config') || '{}');
+let alerts = JSON.parse(localStorage.getItem('dc_alerts') || '[]');
+
+(function init() {
+  if (config.tgToken)  document.getElementById('tg-token').value  = config.tgToken;
+  if (config.tgChatId) document.getElementById('tg-chatid').value = config.tgChatId;
+  if (config.dcToken)  document.getElementById('dc-token').value  = config.dcToken;
+  if (config.currency) document.getElementById('currency').value  = config.currency;
+  if (config.ghToken)  document.getElementById('gh-token').value  = config.ghToken;
+  if (config.ghRepo)   document.getElementById('gh-repo').value   = config.ghRepo;
+  updateConnectedBadge();
+  renderAlerts();
+})();
+
+function saveConfig() {
+  config = {
+    tgToken:  document.getElementById('tg-token').value.trim(),
+    tgChatId: document.getElementById('tg-chatid').value.trim(),
+    dcToken:  document.getElementById('dc-token').value.trim(),
+    currency: document.getElementById('currency').value,
+    ghToken:  document.getElementById('gh-token').value.trim(),
+    ghRepo:   document.getElementById('gh-repo').value.trim(),
+  };
+  localStorage.setItem('dc_config', JSON.stringify(config));
+  show('config-saved', 2500);
+  updateConnectedBadge();
+}
+
+function updateConnectedBadge() {
+  const el = document.getElementById('connected-status');
+  const ok = config.tgToken && config.tgChatId && config.dcToken;
+  el.innerHTML = ok
+    ? '<span class="connected-badge"><span class="dot"></span>Configurado</span>'
+    : '<span style="font-size:13px;color:#6b6b6b;">Completá la configuración ↑</span>';
+}
+
+async function testTelegram() {
+  if (!config.tgToken || !config.tgChatId) { alert('Guardá el token y Chat ID primero.'); return; }
+  try {
+    const r = await fetch(`https://api.telegram.org/bot${config.tgToken}/sendMessage`, {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ chat_id: config.tgChatId, text: '✅ Bot de Discogs Alertas funcionando!' })
+    });
+    const d = await r.json();
+    show(d.ok ? 'test-ok' : 'test-fail', 3000);
+  } catch { show('test-fail', 3000); }
+}
+
+// ── GitHub Sync ───────────────────────────────────────────
+async function syncToGitHub() {
+  if (!config.ghToken || !config.ghRepo) {
+    alert('Completá el GitHub Token y el repo (usuario/repo) en la configuración y guardá.');
+    return;
+  }
+  const loader = document.getElementById('sync-loader');
+  loader.classList.add('show');
+
+  try {
+    const apiBase = `https://api.github.com/repos/${config.ghRepo}/contents/alerts.json`;
+    const headers = {
+      'Authorization': `token ${config.ghToken}`,
+      'Content-Type': 'application/json',
+    };
+
+    // Obtener el SHA del archivo actual (necesario para actualizarlo)
+    let sha = null;
+    const getRes = await fetch(apiBase, { headers });
+    if (getRes.ok) {
+      const getData = await getRes.json();
+      sha = getData.sha;
+    }
+
+    // Codificar el contenido en base64
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(alerts, null, 2))));
+
+    const body = {
+      message: `Actualizar alertas — ${new Date().toLocaleString('es-AR')}`,
+      content,
+      ...(sha ? { sha } : {}),
+    };
+
+    const putRes = await fetch(apiBase, {
+      method: 'PUT', headers,
+      body: JSON.stringify(body),
+    });
+
+    if (putRes.ok) {
+      document.getElementById('sync-bar').classList.add('show');
+      setTimeout(() => document.getElementById('sync-bar').classList.remove('show'), 5000);
+    } else {
+      const err = await putRes.json();
+      alert(`Error al sincronizar: ${err.message}`);
+    }
+  } catch(e) {
+    alert('Error de conexión al sincronizar.');
+  } finally {
+    loader.classList.remove('show');
+  }
+}
+
+// ── Búsqueda ─────────────────────────────────────────────
+async function searchDiscs() {
+  const q = document.getElementById('search-input').value.trim();
+  if (!q) return;
+  if (!config.dcToken) { alert('Guardá tu Discogs API Token primero.'); return; }
+  const loader = document.getElementById('search-loader');
+  const list   = document.getElementById('results-list');
+  loader.classList.add('show'); list.innerHTML = '';
+  try {
+    const r = await fetch(`https://api.discogs.com/database/search?q=${encodeURIComponent(q)}&type=release&format=vinyl&per_page=6&token=${config.dcToken}`);
+    const d = await r.json();
+    if (!d.results?.length) { list.innerHTML = '<p style="color:var(--muted);font-size:14px;">Sin resultados.</p>'; return; }
+    for (const r of d.results) list.appendChild(buildResultItem(r));
+  } catch { list.innerHTML = '<p style="color:var(--red);font-size:14px;">Error al conectar con Discogs.</p>'; }
+  finally { loader.classList.remove('show'); }
+}
+
+function buildResultItem(r) {
+  const div = document.createElement('div');
+  div.className = 'result-item';
+  const hasImg = r.cover_image && !r.cover_image.includes('spacer');
+  const copies = r.num_for_sale ?? '?';
+  const copiesClass = copies === 0 ? 'copies-none' : 'copies-ok';
+  const copiesText  = copies === 0 ? '❌ Sin copias en venta' : `✅ ${copies} copia${copies===1?'':'s'} en venta`;
+  const lowestPrice = r.lowest_price ? ` · mín. ${config.currency||'USD'} ${r.lowest_price}` : '';
+  div.innerHTML = `
+    ${hasImg ? `<img class="result-thumb" src="${r.cover_image}" loading="lazy" onerror="this.style.display='none'">` : `<div class="result-thumb-placeholder"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="var(--muted)" stroke-width="1.5"/><circle cx="12" cy="12" r="3" fill="var(--muted)"/></svg></div>`}
+    <div class="result-info">
+      <div class="result-title">${r.title||'—'}</div>
+      <div class="result-sub">${[r.year,r.country,r.format?.join(', ')].filter(Boolean).join(' · ')}</div>
+      <div class="result-copies ${copiesClass}">${copiesText}${lowestPrice}</div>
+    </div>
+    <div class="result-actions" id="actions-${r.id}">${buildActionButtons(r, copies)}</div>`;
+  return div;
+}
+
+function buildActionButtons(r, copies) {
+  const hasNew   = alerts.find(a => a.releaseId === r.id && a.type === 'new_copy');
+  const hasPrice = alerts.find(a => a.releaseId === r.id && a.type === 'price_drop');
+  let html = '';
+  if (copies === 0 || copies === '?') {
+    html += hasNew
+      ? `<span style="font-size:12px;color:var(--green);">✓ Alerta activa</span>`
+      : `<button class="btn btn-sm" onclick="addAlert('new_copy', ${JSON.stringify(r).replace(/"/g,'&quot;')})">+ Avisar si aparece</button>`;
+  }
+  if (!hasPrice) {
+    html += `<div class="price-input-wrap">
+      <span>${config.currency||'USD'}</span>
+      <input type="number" id="price-${r.id}" placeholder="máx" min="1" value="${r.lowest_price ? Math.round(r.lowest_price*.8) : 50}">
+      <button class="btn btn-sm btn-outline" onclick="addPriceAlert(${JSON.stringify(r).replace(/"/g,'&quot;')})">+ Precio</button>
+    </div>`;
+  } else {
+    html += `<span style="font-size:12px;color:var(--green);">✓ Alerta precio activa</span>`;
+  }
+  return html;
+}
+
+function addAlert(type, release) {
+  if (alerts.find(a => a.releaseId === release.id && a.type === type)) return;
+  alerts.push({ id: Date.now(), type, releaseId: release.id, title: release.title, year: release.year, country: release.country, thumb: release.cover_image, addedAt: new Date().toISOString() });
+  saveAlerts(); renderAlerts();
+  document.getElementById(`actions-${release.id}`).innerHTML = buildActionButtons(release, 0);
+}
+
+function addPriceAlert(release) {
+  const price = parseFloat(document.getElementById(`price-${release.id}`)?.value);
+  if (!price || price <= 0) { alert('Ingresá un precio válido.'); return; }
+  if (alerts.find(a => a.releaseId === release.id && a.type === 'price_drop')) return;
+  alerts.push({ id: Date.now(), type: 'price_drop', releaseId: release.id, title: release.title, year: release.year, country: release.country, thumb: release.cover_image, maxPrice: price, currency: config.currency||'USD', addedAt: new Date().toISOString() });
+  saveAlerts(); renderAlerts();
+  document.getElementById(`actions-${release.id}`).innerHTML = buildActionButtons(release, release.num_for_sale);
+}
+
+function saveAlerts() { localStorage.setItem('dc_alerts', JSON.stringify(alerts)); }
+
+function renderAlerts() {
+  const el = document.getElementById('alerts-list');
+  if (!alerts.length) { el.innerHTML = '<div class="empty-state">Todavía no hay alertas.<br>Buscá un disco arriba y agregá una.</div>'; return; }
+  el.innerHTML = '';
+  for (const a of [...alerts].reverse()) {
+    const div = document.createElement('div');
+    div.className = 'alert-item';
+    const isNew = a.type === 'new_copy';
+    div.innerHTML = `
+      <span class="alert-badge ${isNew?'badge-new':'badge-price'}">${isNew?'Sin copias':'Precio'}</span>
+      <div class="alert-info">
+        <div class="alert-title">${a.title}</div>
+        <div class="alert-sub">${isNew?'Avisame cuando aparezca una copia':`Avisame si baja de ${a.currency} ${a.maxPrice}`}${a.year?' · '+a.year:''}</div>
+      </div>
+      <button class="btn-delete" onclick="removeAlert(${a.id})">×</button>`;
+    el.appendChild(div);
+  }
+}
+
+function removeAlert(id) { alerts = alerts.filter(a => a.id !== id); saveAlerts(); renderAlerts(); }
+
+function show(id, ms) {
+  const el = document.getElementById(id);
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), ms);
+}
+</script>
+</body>
+</html>
