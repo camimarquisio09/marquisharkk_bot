@@ -110,5 +110,17 @@
     "country": "Australia & New Zealand",
     "thumb": "https://i.discogs.com/8De_AcQBGsrNuv78tYjl0xNrgcaPTSFsazZ_svopYTw/rs:fit/g:sm/q:90/h:480/w:489/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxMDYx/MjEtMTM1NTQyNjMz/MS02NjU4LmpwZWc.jpeg",
     "addedAt": "2026-03-17T21:18:05.888Z"
+  },
+  {
+    "id": 1773782317519,
+    "type": "price_drop",
+    "releaseId": 36512014,
+    "title": "Ty Serna - Energized",
+    "year": 2026,
+    "country": "US",
+    "thumb": "https://i.discogs.com/Lvyk7pLIqkMGMN9ReMCkZEyjB4ZNLxfYhn_6pGyuyHQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NTEy/MDE0LTE3NzExNzA2/MDItNjQ2My5wbmc.jpeg",
+    "maxPrice": 40,
+    "currency": "USD",
+    "addedAt": "2026-03-17T21:18:37.519Z"
   }
 ]
