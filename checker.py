@@ -38,16 +38,14 @@ def get_release_info(release_id: int) -> dict | None:
         return None
     return r.json()
 
-def get_marketplace_listings(release_id: int, max_price: float = None) -> list:
-    """Devuelve listings disponibles, opcionalmente filtrados por precio."""
-    url = f"https://api.discogs.com/marketplace/search?release_id={release_id}&status=For+Sale&sort=price&sort_order=asc&per_page=10"
+def get_release_lowest_price(release_id: int) -> tuple:
+    """Devuelve (num_for_sale, lowest_price) usando el endpoint de releases."""
+    url = f"https://api.discogs.com/releases/{release_id}"
     r = requests.get(url, headers=DISCOGS_HEADERS)
     if r.status_code != 200:
-        return []
-    listings = r.json().get("listings", [])
-    if max_price is not None:
-        listings = [l for l in listings if l["price"]["value"] <= max_price]
-    return listings
+        return 0, None
+    data = r.json()
+    return data.get("num_for_sale", 0), data.get("lowest_price")
 
 # ── Procesamiento de alertas ──────────────────────────────
 def check_alerts(alerts: list) -> list:
@@ -97,26 +95,21 @@ def check_alerts(alerts: list) -> list:
         elif alert["type"] == "price_drop":
             max_price = alert.get("maxPrice", 9999)
             currency  = alert.get("currency", CURRENCY)
-            listings  = get_marketplace_listings(release_id, max_price=max_price)
+            num_for_sale, lowest_price = get_release_lowest_price(release_id)
 
-            if listings:
-                best  = listings[0]
-                price = best["price"]["value"]
-                seller= best["seller"]["username"]
-                cond  = best.get("condition", "")
-                url   = f"https://www.discogs.com/sell/item/{best['id']}"
+            if lowest_price is not None and lowest_price <= max_price:
+                url = f"https://www.discogs.com/sell/release/{release_id}"
                 msg = (
                     f"💸 <b>¡Precio bajo encontrado!</b>\n"
                     f"🎵 <b>{title}</b>{label_year}\n"
-                    f"💰 {currency} {price:.2f} (tu límite: {currency} {max_price})\n"
-                    f"📀 Condición: {cond}\n"
-                    f"👤 Vendedor: {seller}\n"
-                    f"🔗 <a href='{url}'>Ver oferta</a>"
+                    f"💰 Precio mínimo: {currency} {lowest_price:.2f} (tu límite: {currency} {max_price})\n"
+                    f"📦 {num_for_sale} copia{'s' if num_for_sale != 1 else ''} disponible{'s' if num_for_sale != 1 else ''}\n"
+                    f"🔗 <a href='{url}'>Ver en Discogs</a>"
                 )
                 send_telegram(msg)
-                print(f"  ✅ Precio bajo notificado: {currency} {price:.2f}")
+                print(f"  ✅ Precio bajo notificado: {currency} {lowest_price:.2f}")
             else:
-                print(f"  ⏳ Sin copias bajo {CURRENCY} {max_price}")
+                print(f"  ⏳ Precio mínimo actual: {currency} {lowest_price} — sobre el límite de {currency} {max_price}")
             updated.append(alert)  # precio: la alerta se mantiene activa
 
     return updated
