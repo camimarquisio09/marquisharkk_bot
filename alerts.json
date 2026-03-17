@@ -165,5 +165,15 @@
     "maxPrice": 35,
     "currency": "USD",
     "addedAt": "2026-03-17T21:21:28.862Z"
+  },
+  {
+    "id": 1773782927104,
+    "type": "new_copy",
+    "releaseId": 30398024,
+    "title": "Subliminal Man - The Inner Solar",
+    "year": 1994,
+    "country": "UK",
+    "thumb": "https://i.discogs.com/HokAjO4L_QuQOZFLRgz28LsI_yCUpI45oAXEVvinGWc/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMzk4/MDI0LTE3MTMxMTY0/NDYtOTg3MC5qcGVn.jpeg",
+    "addedAt": "2026-03-17T21:28:47.104Z"
   }
 ]
