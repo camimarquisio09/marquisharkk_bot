@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": 1773782024713,
+    "type": "price_drop",
+    "releaseId": 930416,
+    "title": "George Acosta & Erick Paredes - Dance Zone E.P. (Volume 1)",
+    "year": 1993,
+    "country": "US",
+    "thumb": "https://i.discogs.com/NbO_EIVTN6C-CZxLQV5i5mos302murH0oDrWA8nGtVA/rs:fit/g:sm/q:90/h:462/w:472/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzMDQx/Ni0xMTc0MDk5MDM4/LmpwZWc.jpeg",
+    "maxPrice": 20,
+    "currency": "USD",
+    "addedAt": "2026-03-17T21:13:44.713Z"
+  }
+]
