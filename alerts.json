@@ -10,5 +10,17 @@
     "maxPrice": 20,
     "currency": "USD",
     "addedAt": "2026-03-17T21:13:44.713Z"
+  },
+  {
+    "id": 1773782072097,
+    "type": "price_drop",
+    "releaseId": 1580773,
+    "title": "Que (6) - Universoul: Inside Your Mind",
+    "year": 2000,
+    "country": "US",
+    "thumb": "https://i.discogs.com/sSvbXxPaY3PPNZNk1NBMQVlEKHbfeKPJQe1PrmyIijE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1ODA3/NzMtMTY4MDI5MDA4/Ni03ODIzLmpwZWc.jpeg",
+    "maxPrice": 100,
+    "currency": "USD",
+    "addedAt": "2026-03-17T21:14:32.097Z"
   }
 ]
