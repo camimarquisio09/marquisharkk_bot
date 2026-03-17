@@ -132,5 +132,14 @@
     "country": "Belgium",
     "thumb": "https://i.discogs.com/Fp3-X81oavvFl92MBU2QRQ2Wi-acYbKsakc4NNYCFec/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MTkw/MS0xNzEwOTgwNzc0/LTkwMTQuanBlZw.jpeg",
     "addedAt": "2026-03-17T21:19:46.751Z"
+  },
+  {
+    "id": 1773782419544,
+    "type": "new_copy",
+    "releaseId": 25967431,
+    "title": "S. Kol - South Plain Field",
+    "year": 2002,
+    "country": "US",
+    "addedAt": "2026-03-17T21:20:19.544Z"
   }
 ]
