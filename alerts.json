@@ -32,5 +32,17 @@
     "country": "Canada",
     "thumb": "https://i.discogs.com/PM-c2bE4hfYHK8TEoAn8L9dB3F9ejPbKnY-KFcu-3rM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyMzQz/MDktMTU0NDUyODEw/MC02MTc4LmpwZWc.jpeg",
     "addedAt": "2026-03-17T21:14:48.382Z"
+  },
+  {
+    "id": 1773782100840,
+    "type": "price_drop",
+    "releaseId": 151762,
+    "title": "Eric B. & Rakim - Follow The Leader (Gene Carbonell Mixes)",
+    "year": 2003,
+    "country": "Canada",
+    "thumb": "https://i.discogs.com/Yy3QUERXp9QAGX9XX7tzxSP0dLGGrNfhTB75_kaovpQ/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTc2/Mi0xNDM3OTQwMTQ4/LTI5ODYuanBlZw.jpeg",
+    "maxPrice": 60,
+    "currency": "USD",
+    "addedAt": "2026-03-17T21:15:00.840Z"
   }
 ]
