@@ -22,5 +22,15 @@
     "maxPrice": 100,
     "currency": "USD",
     "addedAt": "2026-03-17T21:14:32.097Z"
+  },
+  {
+    "id": 1773782088382,
+    "type": "new_copy",
+    "releaseId": 7234309,
+    "title": "Eric B. & Rakim - Follow The Leader (Gene Carbonell Mixes)",
+    "year": 2003,
+    "country": "Canada",
+    "thumb": "https://i.discogs.com/PM-c2bE4hfYHK8TEoAn8L9dB3F9ejPbKnY-KFcu-3rM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyMzQz/MDktMTU0NDUyODEw/MC02MTc4LmpwZWc.jpeg",
+    "addedAt": "2026-03-17T21:14:48.382Z"
   }
 ]
