@@ -66,5 +66,17 @@
     "country": "Germany",
     "thumb": "https://i.discogs.com/OmdkVAypLmyG4_jPbXTIhVHk_tFGTrranDXHHi4-C6w/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNzE3/NC0xMjQyMzE4NDkx/LmpwZWc.jpeg",
     "addedAt": "2026-03-17T21:15:51.209Z"
+  },
+  {
+    "id": 1773782179808,
+    "type": "price_drop",
+    "releaseId": 740875,
+    "title": "Durchblick - Mach Dich Locker",
+    "year": 2006,
+    "country": "Germany",
+    "thumb": "https://i.discogs.com/70qw2ufObwTUmkTMJ752KSzXxuj5pK3sXMEx0YSwEbY/rs:fit/g:sm/q:90/h:496/w:483/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0MDg3/NS0xMTkxMjU3NTM2/LmpwZWc.jpeg",
+    "maxPrice": 80,
+    "currency": "USD",
+    "addedAt": "2026-03-17T21:16:19.808Z"
   }
 ]
