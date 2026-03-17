@@ -122,5 +122,15 @@
     "maxPrice": 40,
     "currency": "USD",
     "addedAt": "2026-03-17T21:18:37.519Z"
+  },
+  {
+    "id": 1773782386751,
+    "type": "new_copy",
+    "releaseId": 291901,
+    "title": "Miami Connection - Watching Me",
+    "year": 2003,
+    "country": "Belgium",
+    "thumb": "https://i.discogs.com/Fp3-X81oavvFl92MBU2QRQ2Wi-acYbKsakc4NNYCFec/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MTkw/MS0xNzEwOTgwNzc0/LTkwMTQuanBlZw.jpeg",
+    "addedAt": "2026-03-17T21:19:46.751Z"
   }
 ]
