@@ -153,5 +153,17 @@
     "maxPrice": 40,
     "currency": "USD",
     "addedAt": "2026-03-17T21:20:36.471Z"
+  },
+  {
+    "id": 1773782488862,
+    "type": "price_drop",
+    "releaseId": 253675,
+    "title": "Crude Reality - Octagon Planet",
+    "year": 2003,
+    "country": "UK",
+    "thumb": "https://i.discogs.com/D1d8x8IDhIWmi4kxCWrsB9M_KjmzEcmFDkPi1kSrTNE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MzY3/NS0xNzM4Njg4OTE0/LTI2NTMuanBlZw.jpeg",
+    "maxPrice": 35,
+    "currency": "USD",
+    "addedAt": "2026-03-17T21:21:28.862Z"
   }
 ]
