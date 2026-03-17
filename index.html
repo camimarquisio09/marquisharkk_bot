@@ -136,10 +136,11 @@
   <div class="card">
     <h2>🔍 Buscar disco</h2>
     <div class="search-row">
-      <input type="text" id="search-input" placeholder="Artista, álbum..." onkeydown="if(event.key==='Enter')searchDiscs()"/>
+      <input type="text" id="search-input" placeholder="Artista, álbum... o pegá el link de Discogs" onkeydown="if(event.key==='Enter')searchDiscs()"/>
       <button class="btn" onclick="searchDiscs()">Buscar</button>
       <div class="loader" id="search-loader"></div>
     </div>
+    <p class="section-hint" style="margin-top:8px;">💡 Podés pegar el link de Discogs directamente, por ejemplo: <em>discogs.com/release/134477</em></p>
     <div class="results-list" id="results-list"></div>
   </div>
 
@@ -264,6 +265,31 @@ async function searchDiscs() {
   const list   = document.getElementById('results-list');
   loader.classList.add('show'); list.innerHTML = '';
   try {
+    // Detectar si es un link o ID de Discogs
+    const releaseMatch = q.match(/discogs\.com\/(?:[a-z]{2}\/)?(?:release|sell\/release)\/(\d+)/i) ||
+                         q.match(/^(\d{5,})$/);
+    if (releaseMatch) {
+      const id = releaseMatch[1];
+      const r = await fetch(`https://api.discogs.com/releases/${id}?token=${config.dcToken}`);
+      const d = await r.json();
+      if (d.id) {
+        const item = {
+          id: d.id,
+          title: `${d.artists_sort} - ${d.title}`,
+          year: d.year,
+          country: d.country,
+          cover_image: d.images?.[0]?.uri,
+          num_for_sale: d.num_for_sale,
+          lowest_price: d.lowest_price,
+          format: d.formats?.map(f => f.name),
+        };
+        list.appendChild(buildResultItem(item));
+      } else {
+        list.innerHTML = '<p style="color:var(--muted);font-size:14px;">No se encontró ese release.</p>';
+      }
+      return;
+    }
+    // Búsqueda normal
     const r = await fetch(`https://api.discogs.com/database/search?q=${encodeURIComponent(q)}&type=release&format=vinyl&per_page=6&token=${config.dcToken}`);
     const d = await r.json();
     if (!d.results?.length) { list.innerHTML = '<p style="color:var(--muted);font-size:14px;">Sin resultados.</p>'; return; }
