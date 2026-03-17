@@ -78,5 +78,27 @@
     "maxPrice": 80,
     "currency": "USD",
     "addedAt": "2026-03-17T21:16:19.808Z"
+  },
+  {
+    "id": 1773782207912,
+    "type": "new_copy",
+    "releaseId": 6930735,
+    "title": "Earth Deuley Presents Neo (12) - Kontraband",
+    "year": 2002,
+    "country": "UK",
+    "thumb": "https://i.discogs.com/dY7IyeJLIYZy_YJ0ZdHMIWc_5DjywqpxqkYcM6Qv470/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5MzA3/MzUtMTYxMDQ3ODcx/NS00NDAyLmpwZWc.jpeg",
+    "addedAt": "2026-03-17T21:16:47.912Z"
+  },
+  {
+    "id": 1773782215816,
+    "type": "price_drop",
+    "releaseId": 145869,
+    "title": "Earth Deuley Presents Neo (12) - Kontraband",
+    "year": 2002,
+    "country": "UK",
+    "thumb": "https://i.discogs.com/c5IxS-q2cG5gki0D84aik1nAOKZwA6WST-Xj4kZ7Ec4/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NTg2/OS0xMzk5NDc0MTcz/LTM2NzEuanBlZw.jpeg",
+    "maxPrice": 50,
+    "currency": "USD",
+    "addedAt": "2026-03-17T21:16:55.816Z"
   }
 ]
