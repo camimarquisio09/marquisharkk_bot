@@ -136,7 +136,7 @@
   <div class="card">
     <h2>🔍 Buscar disco</h2>
     <div class="search-row">
-      <input type="text" id="search-input" placeholder="Artista, álbum... o pegá el link de Discogs" onkeydown="if(event.key==='Enter')searchDiscs()"/>
+      <input type="text" id="search-input" placeholder="Pegá el link de la edición en Discogs" onkeydown="if(event.key==='Enter')searchDiscs()"/>
       <button class="btn" onclick="searchDiscs()">Buscar</button>
       <div class="loader" id="search-loader"></div>
     </div>
@@ -267,6 +267,7 @@ async function searchDiscs() {
   try {
     // Detectar si es un link o ID de Discogs
     const releaseMatch = q.match(/discogs\.com\/(?:[a-z]{2}\/)?(?:release|sell\/release)\/(\d+)/i) ||
+                         q.match(/discogs\.com\/(?:[a-z]{2}\/)?master\/(\d+)/i) ||
                          q.match(/^(\d{5,})$/);
     if (releaseMatch) {
       const id = releaseMatch[1];
