@@ -100,5 +100,15 @@
     "maxPrice": 50,
     "currency": "USD",
     "addedAt": "2026-03-17T21:16:55.816Z"
+  },
+  {
+    "id": 1773782285888,
+    "type": "new_copy",
+    "releaseId": 4106121,
+    "title": "99 Cents - Adrenalin Spaceboy",
+    "year": 1998,
+    "country": "Australia & New Zealand",
+    "thumb": "https://i.discogs.com/8De_AcQBGsrNuv78tYjl0xNrgcaPTSFsazZ_svopYTw/rs:fit/g:sm/q:90/h:480/w:489/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxMDYx/MjEtMTM1NTQyNjMz/MS02NjU4LmpwZWc.jpeg",
+    "addedAt": "2026-03-17T21:18:05.888Z"
   }
 ]
