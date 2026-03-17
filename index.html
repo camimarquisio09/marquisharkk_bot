@@ -159,7 +159,7 @@
 let config = JSON.parse(localStorage.getItem('dc_config') || '{}');
 let alerts = JSON.parse(localStorage.getItem('dc_alerts') || '[]');
 
-(function init() {
+(async function init() {
   if (config.tgToken)  document.getElementById('tg-token').value  = config.tgToken;
   if (config.tgChatId) document.getElementById('tg-chatid').value = config.tgChatId;
   if (config.dcToken)  document.getElementById('dc-token').value  = config.dcToken;
@@ -167,7 +167,11 @@ let alerts = JSON.parse(localStorage.getItem('dc_alerts') || '[]');
   if (config.ghToken)  document.getElementById('gh-token').value  = config.ghToken;
   if (config.ghRepo)   document.getElementById('gh-repo').value   = config.ghRepo;
   updateConnectedBadge();
-  renderAlerts();
+  if (config.ghToken && config.ghRepo) {
+    await loadAlertsFromGitHub();
+  } else {
+    renderAlerts();
+  }
 })();
 
 function saveConfig() {
@@ -205,6 +209,24 @@ async function testTelegram() {
 }
 
 // ── GitHub Sync ───────────────────────────────────────────
+async function loadAlertsFromGitHub() {
+  if (!config.ghToken || !config.ghRepo) return;
+  try {
+    const r = await fetch(`https://api.github.com/repos/${config.ghRepo}/contents/alerts.json`, {
+      headers: { 'Authorization': `token ${config.ghToken}` }
+    });
+    if (r.ok) {
+      const d = await r.json();
+      const content = decodeURIComponent(escape(atob(d.content.replace(/\n/g, ''))));
+      alerts = JSON.parse(content);
+      localStorage.setItem('dc_alerts', JSON.stringify(alerts));
+    }
+  } catch(e) {
+    console.error('Error cargando alertas desde GitHub:', e);
+  }
+  renderAlerts();
+}
+
 async function syncToGitHub() {
   if (!config.ghToken || !config.ghRepo) {
     alert('Completá el GitHub Token y el repo (usuario/repo) en la configuración y guardá.');
