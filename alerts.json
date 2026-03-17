@@ -141,5 +141,17 @@
     "year": 2002,
     "country": "US",
     "addedAt": "2026-03-17T21:20:19.544Z"
+  },
+  {
+    "id": 1773782436471,
+    "type": "price_drop",
+    "releaseId": 197065,
+    "title": "S. Kol - South Plain Field",
+    "year": 2002,
+    "country": "US",
+    "thumb": "https://i.discogs.com/1_zb510QRIoOVm09Gag8floj74_W7udpbPgW5xpnBq8/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NzA2/NS0xNzQzMTUwMjgz/LTEyMDMuanBlZw.jpeg",
+    "maxPrice": 40,
+    "currency": "USD",
+    "addedAt": "2026-03-17T21:20:36.471Z"
   }
 ]
