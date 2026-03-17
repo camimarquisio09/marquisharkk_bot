@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": 1773714729730,
+    "type": "price_drop",
+    "releaseId": 134477,
+    "title": "Jeff Bennett - 006 - Jeff Bennett",
+    "year": 2003,
+    "country": "Spain",
+    "thumb": "https://i.discogs.com/G5ZkEyrARjAknB21s43POnY-_H2Vw3O5OuXMYh8oOOs/rs:fit/g:sm/q:90/h:600/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNDQ3/Ny0xNDk1MjU4MDQ1/LTE2NjEuanBlZw.jpeg",
+    "maxPrice": 999,
+    "currency": "USD",
+    "addedAt": "2026-03-17T02:32:09.730Z"
+  }
+]
