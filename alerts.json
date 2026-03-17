@@ -233,5 +233,15 @@
     "year": 2002,
     "country": "US",
     "addedAt": "2026-03-17T21:33:02.796Z"
+  },
+  {
+    "id": 1773783192628,
+    "type": "new_copy",
+    "releaseId": 160536,
+    "title": "Habersham & Numinous - Mister Cool",
+    "year": 2003,
+    "country": "UK",
+    "thumb": "https://i.discogs.com/4UkGDzS-eNwMgYP59nEiGR91fQ5H72TkhUzXEw9ctFA/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDUz/Ni0xNDgyNzY1OTQx/LTQ3NjMuanBlZw.jpeg",
+    "addedAt": "2026-03-17T21:33:12.628Z"
   }
 ]
