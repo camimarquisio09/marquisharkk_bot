@@ -56,5 +56,15 @@
     "maxPrice": 40,
     "currency": "USD",
     "addedAt": "2026-03-17T21:15:25.760Z"
+  },
+  {
+    "id": 1773782151209,
+    "type": "new_copy",
+    "releaseId": 137174,
+    "title": "Chiadra - Keyboard Cowboys E.P.",
+    "year": 2000,
+    "country": "Germany",
+    "thumb": "https://i.discogs.com/OmdkVAypLmyG4_jPbXTIhVHk_tFGTrranDXHHi4-C6w/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNzE3/NC0xMjQyMzE4NDkx/LmpwZWc.jpeg",
+    "addedAt": "2026-03-17T21:15:51.209Z"
   }
 ]
