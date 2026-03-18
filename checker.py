@@ -20,10 +20,11 @@ DISCOGS_HEADERS = {
 }
 
 # ── Telegram ─────────────────────────────────────────────
-def send_telegram(msg: str):
+def send_telegram(msg: str, chat_id: str = None):
+    target = chat_id or TG_CHAT_ID
     url = f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendMessage"
     requests.post(url, json={
-        "chat_id": TG_CHAT_ID,
+        "chat_id": target,
         "text": msg,
         "parse_mode": "HTML",
         "disable_web_page_preview": False,
@@ -38,6 +39,9 @@ def get_release_info(release_id: int) -> dict | None:
         return None
     return r.json()
 
+# Jerarquía de condiciones (de mejor a peor)
+CONDITION_RANK = {'M': 0, 'NM': 1, 'VG+': 2, 'VG': 3, 'G+': 4, 'G': 5, 'F': 6, 'P': 7}
+
 def get_release_lowest_price(release_id: int) -> tuple:
     """Devuelve (num_for_sale, lowest_price) usando el endpoint de releases."""
     url = f"https://api.discogs.com/releases/{release_id}"
@@ -46,6 +50,23 @@ def get_release_lowest_price(release_id: int) -> tuple:
         return 0, None
     data = r.json()
     return data.get("num_for_sale", 0), data.get("lowest_price")
+
+def get_listings_by_condition(release_id: int, min_condition: str, max_price: float) -> list:
+    """Devuelve listings que cumplen condición mínima y precio máximo."""
+    url = f"https://api.discogs.com/marketplace/listings?release_id={release_id}&status=For+Sale&sort=price&sort_order=asc&per_page=50"
+    r = requests.get(url, headers=DISCOGS_HEADERS)
+    if r.status_code != 200:
+        return []
+    listings = r.json().get("listings", [])
+    min_rank = CONDITION_RANK.get(min_condition, 99)
+    result = []
+    for l in listings:
+        cond = l.get("condition", "")
+        rank = CONDITION_RANK.get(cond, 99)
+        price = l.get("price", {}).get("value", 9999)
+        if rank <= min_rank and price <= max_price:
+            result.append(l)
+    return result
 
 # ── Procesamiento de alertas ──────────────────────────────
 def check_alerts(alerts: list) -> list:
@@ -60,6 +81,8 @@ def check_alerts(alerts: list) -> list:
         title      = alert["title"]
         year       = alert.get("year", "")
         label_year = f" ({year})" if year else ""
+
+        alert_chat_id = alert.get("chatId", TG_CHAT_ID)
 
         print(f"[{datetime.now():%H:%M}] Chequeando: {title}{label_year}")
         time.sleep(1.5)  # respetar rate limit de Discogs
@@ -91,7 +114,32 @@ def check_alerts(alerts: list) -> list:
                 print(f"  ⏳ Sin copias todavía")
                 updated.append(alert)
 
-        # ── Tipo 2: avisa si el precio baja del límite ──────
+        # ── Tipo 3: combinada (precio + condición) ──────────
+        elif alert["type"] == "combined":
+            max_price    = alert.get("maxPrice", 9999)
+            min_cond     = alert.get("minCondition", "VG+")
+            currency     = alert.get("currency", CURRENCY)
+            listings     = get_listings_by_condition(release_id, min_cond, max_price)
+
+            if listings:
+                best  = listings[0]
+                price = best["price"]["value"]
+                cond  = best.get("condition", "")
+                seller= best["seller"]["username"]
+                url   = f"https://www.discogs.com/sell/item/{best['id']}"
+                msg = (
+                    f"🎯 <b>¡Oferta encontrada!</b>\n"
+                    f"🎵 <b>{title}</b>{label_year}\n"
+                    f"💰 {currency} {price:.2f} (tu límite: {currency} {max_price})\n"
+                    f"📀 Condición: {cond} (tu mínimo: {min_cond})\n"
+                    f"👤 Vendedor: {seller}\n"
+                    f"🔗 <a href='{url}'>Ver oferta</a>"
+                )
+                send_telegram(msg, alert_chat_id)
+                print(f"  ✅ Oferta combinada notificada: {currency} {price:.2f} — {cond}")
+            else:
+                print(f"  ⏳ Sin copias {min_cond}+ bajo {currency} {max_price}")
+            updated.append(alert)
         elif alert["type"] == "price_drop":
             max_price = alert.get("maxPrice", 9999)
             currency  = alert.get("currency", CURRENCY)
