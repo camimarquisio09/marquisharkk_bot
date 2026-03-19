@@ -275,5 +275,16 @@
     "currency": "USD",
     "addedAt": "2026-03-19T22:52:20.150Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1773960792465,
+    "type": "price_drop",
+    "releaseId": 203358,
+    "title": "Volldampf - Trainpotting",
+    "year": 2000,
+    "maxPrice": 50,
+    "currency": "USD",
+    "addedAt": "2026-03-19T22:53:12.465Z",
+    "chatId": "1026267297"
   }
 ]
