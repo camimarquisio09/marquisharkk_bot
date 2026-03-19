@@ -1,27 +1,16 @@
 [
   {
-    "id": 1773782024713,
-    "type": "price_drop",
-    "releaseId": 930416,
-    "title": "George Acosta & Erick Paredes - Dance Zone E.P. (Volume 1)",
-    "year": 1993,
-    "country": "US",
-    "maxPrice": 20,
-    "currency": "USD",
-    "addedAt": "2026-03-17T21:13:44.713Z",
-    "chatIds": ["6467783890", "1026267297"]
-  },
-  {
     "id": 1773782072097,
     "type": "price_drop",
     "releaseId": 1580773,
     "title": "Que (6) - Universoul: Inside Your Mind",
     "year": 2000,
     "country": "US",
+    "thumb": "https://i.discogs.com/sSvbXxPaY3PPNZNk1NBMQVlEKHbfeKPJQe1PrmyIijE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1ODA3/NzMtMTY4MDI5MDA4/Ni03ODIzLmpwZWc.jpeg",
     "maxPrice": 100,
     "currency": "USD",
     "addedAt": "2026-03-17T21:14:32.097Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773782088382,
@@ -30,8 +19,9 @@
     "title": "Eric B. & Rakim - Follow The Leader (Gene Carbonell Mixes)",
     "year": 2003,
     "country": "Canada",
+    "thumb": "https://i.discogs.com/PM-c2bE4hfYHK8TEoAn8L9dB3F9ejPbKnY-KFcu-3rM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyMzQz/MDktMTU0NDUyODEw/MC02MTc4LmpwZWc.jpeg",
     "addedAt": "2026-03-17T21:14:48.382Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773782100840,
@@ -40,10 +30,11 @@
     "title": "Eric B. & Rakim - Follow The Leader (Gene Carbonell Mixes)",
     "year": 2003,
     "country": "Canada",
+    "thumb": "https://i.discogs.com/Yy3QUERXp9QAGX9XX7tzxSP0dLGGrNfhTB75_kaovpQ/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTc2/Mi0xNDM3OTQwMTQ4/LTI5ODYuanBlZw.jpeg",
     "maxPrice": 60,
     "currency": "USD",
     "addedAt": "2026-03-17T21:15:00.840Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773782125760,
@@ -52,10 +43,11 @@
     "title": "Da Sunlounge - Skin Tight EP",
     "year": 2009,
     "country": "UK",
+    "thumb": "https://i.discogs.com/aJsv2vD2LKjBIFbNMleSOw3U2X-xO8yUnVPV0VgdvSs/rs:fit/g:sm/q:90/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNjU5/NDgtMTI2MTk3NDk1/NS5qcGVn.jpeg",
     "maxPrice": 40,
     "currency": "USD",
     "addedAt": "2026-03-17T21:15:25.760Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773782151209,
@@ -64,8 +56,9 @@
     "title": "Chiadra - Keyboard Cowboys E.P.",
     "year": 2000,
     "country": "Germany",
+    "thumb": "https://i.discogs.com/OmdkVAypLmyG4_jPbXTIhVHk_tFGTrranDXHHi4-C6w/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNzE3/NC0xMjQyMzE4NDkx/LmpwZWc.jpeg",
     "addedAt": "2026-03-17T21:15:51.209Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773782179808,
@@ -74,10 +67,11 @@
     "title": "Durchblick - Mach Dich Locker",
     "year": 2006,
     "country": "Germany",
+    "thumb": "https://i.discogs.com/70qw2ufObwTUmkTMJ752KSzXxuj5pK3sXMEx0YSwEbY/rs:fit/g:sm/q:90/h:496/w:483/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0MDg3/NS0xMTkxMjU3NTM2/LmpwZWc.jpeg",
     "maxPrice": 80,
     "currency": "USD",
     "addedAt": "2026-03-17T21:16:19.808Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773782207912,
@@ -86,8 +80,9 @@
     "title": "Earth Deuley Presents Neo (12) - Kontraband",
     "year": 2002,
     "country": "UK",
+    "thumb": "https://i.discogs.com/dY7IyeJLIYZy_YJ0ZdHMIWc_5DjywqpxqkYcM6Qv470/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5MzA3/MzUtMTYxMDQ3ODcx/NS00NDAyLmpwZWc.jpeg",
     "addedAt": "2026-03-17T21:16:47.912Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773782215816,
@@ -96,10 +91,11 @@
     "title": "Earth Deuley Presents Neo (12) - Kontraband",
     "year": 2002,
     "country": "UK",
+    "thumb": "https://i.discogs.com/c5IxS-q2cG5gki0D84aik1nAOKZwA6WST-Xj4kZ7Ec4/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NTg2/OS0xMzk5NDc0MTcz/LTM2NzEuanBlZw.jpeg",
     "maxPrice": 50,
     "currency": "USD",
     "addedAt": "2026-03-17T21:16:55.816Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773782285888,
@@ -108,8 +104,9 @@
     "title": "99 Cents - Adrenalin Spaceboy",
     "year": 1998,
     "country": "Australia & New Zealand",
+    "thumb": "https://i.discogs.com/8De_AcQBGsrNuv78tYjl0xNrgcaPTSFsazZ_svopYTw/rs:fit/g:sm/q:90/h:480/w:489/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxMDYx/MjEtMTM1NTQyNjMz/MS02NjU4LmpwZWc.jpeg",
     "addedAt": "2026-03-17T21:18:05.888Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773782317519,
@@ -118,10 +115,11 @@
     "title": "Ty Serna - Energized",
     "year": 2026,
     "country": "US",
+    "thumb": "https://i.discogs.com/Lvyk7pLIqkMGMN9ReMCkZEyjB4ZNLxfYhn_6pGyuyHQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NTEy/MDE0LTE3NzExNzA2/MDItNjQ2My5wbmc.jpeg",
     "maxPrice": 40,
     "currency": "USD",
     "addedAt": "2026-03-17T21:18:37.519Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773782386751,
@@ -130,8 +128,9 @@
     "title": "Miami Connection - Watching Me",
     "year": 2003,
     "country": "Belgium",
+    "thumb": "https://i.discogs.com/Fp3-X81oavvFl92MBU2QRQ2Wi-acYbKsakc4NNYCFec/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MTkw/MS0xNzEwOTgwNzc0/LTkwMTQuanBlZw.jpeg",
     "addedAt": "2026-03-17T21:19:46.751Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773782419544,
@@ -141,7 +140,7 @@
     "year": 2002,
     "country": "US",
     "addedAt": "2026-03-17T21:20:19.544Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773782436471,
@@ -150,10 +149,11 @@
     "title": "S. Kol - South Plain Field",
     "year": 2002,
     "country": "US",
+    "thumb": "https://i.discogs.com/1_zb510QRIoOVm09Gag8floj74_W7udpbPgW5xpnBq8/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NzA2/NS0xNzQzMTUwMjgz/LTEyMDMuanBlZw.jpeg",
     "maxPrice": 40,
     "currency": "USD",
     "addedAt": "2026-03-17T21:20:36.471Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773782488862,
@@ -162,10 +162,11 @@
     "title": "Crude Reality - Octagon Planet",
     "year": 2003,
     "country": "UK",
+    "thumb": "https://i.discogs.com/D1d8x8IDhIWmi4kxCWrsB9M_KjmzEcmFDkPi1kSrTNE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MzY3/NS0xNzM4Njg4OTE0/LTI2NTMuanBlZw.jpeg",
     "maxPrice": 35,
     "currency": "USD",
     "addedAt": "2026-03-17T21:21:28.862Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773782927104,
@@ -174,8 +175,9 @@
     "title": "Subliminal Man - The Inner Solar",
     "year": 1994,
     "country": "UK",
+    "thumb": "https://i.discogs.com/HokAjO4L_QuQOZFLRgz28LsI_yCUpI45oAXEVvinGWc/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMzk4/MDI0LTE3MTMxMTY0/NDYtOTg3MC5qcGVn.jpeg",
     "addedAt": "2026-03-17T21:28:47.104Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773782982196,
@@ -184,8 +186,9 @@
     "title": "12 Shades Of Fantasy - UK Underground",
     "year": 2001,
     "country": "UK",
+    "thumb": "https://i.discogs.com/bZ019yD_VNAe1TZPJ1zIsTJZaWdHKkuZMVbSMs3w35A/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0ODU0/MTE0LTE1ODI4NzU5/MzAtNDg0Mi5qcGVn.jpeg",
     "addedAt": "2026-03-17T21:29:42.197Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773783103292,
@@ -195,7 +198,7 @@
     "year": 2003,
     "country": "UK",
     "addedAt": "2026-03-17T21:31:43.292Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773783119677,
@@ -204,8 +207,9 @@
     "title": "Warriors Of Funk - Psychofunkodiscodelic",
     "year": 2002,
     "country": "US",
+    "thumb": "https://i.discogs.com/E0la4SYfqp36ql858_r1kASFy2r9dIMhcoFW3RMOWZA/rs:fit/g:sm/q:90/h:215/w:214/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4OTM2/OS0xMzk1OTQ1MjQ5/LTY4NDcuanBlZw.jpeg",
     "addedAt": "2026-03-17T21:31:59.677Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773783129317,
@@ -214,8 +218,9 @@
     "title": "League Of Sinners - Doseball / Stranger Than Fiction",
     "year": 1995,
     "country": "UK",
+    "thumb": "https://i.discogs.com/Z9DAg8NccdzvjUYWVRQCTUnHyn7WSiM2kscx6uIf6HA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NDEw/ODc4LTE1OTExMDM2/MTktNjQ0OS5qcGVn.jpeg",
     "addedAt": "2026-03-17T21:32:09.317Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773783151580,
@@ -224,8 +229,9 @@
     "title": "Atomic Dj - Underage E.P.",
     "year": 2001,
     "country": "US",
+    "thumb": "https://i.discogs.com/5PYoHHXxuXfowtnDuU6grYOLyHd95ZOR5eR29Z8Gdyc/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNjMy/MjY3LTE2NTkyODE4/NTQtNzM0MS5qcGVn.jpeg",
     "addedAt": "2026-03-17T21:32:31.580Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773783182796,
@@ -235,7 +241,7 @@
     "year": 2002,
     "country": "US",
     "addedAt": "2026-03-17T21:33:02.796Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773783192628,
@@ -244,8 +250,9 @@
     "title": "Habersham & Numinous - Mister Cool",
     "year": 2003,
     "country": "UK",
+    "thumb": "https://i.discogs.com/4UkGDzS-eNwMgYP59nEiGR91fQ5H72TkhUzXEw9ctFA/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDUz/Ni0xNDgyNzY1OTQx/LTQ3NjMuanBlZw.jpeg",
     "addedAt": "2026-03-17T21:33:12.628Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   },
   {
     "id": 1773808775276,
@@ -255,6 +262,6 @@
     "year": 2000,
     "country": "Germany",
     "addedAt": "2026-03-18T04:39:35.276Z",
-    "chatIds": ["6467783890", "1026267297"]
+    "chatId": "1026267297"
   }
 ]
