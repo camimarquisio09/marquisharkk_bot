@@ -263,5 +263,17 @@
     "country": "Germany",
     "addedAt": "2026-03-18T04:39:35.276Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1773960740150,
+    "type": "combined",
+    "releaseId": 930416,
+    "title": "George Acosta & Erick Paredes - Dance Zone E.P. (Volume 1)",
+    "year": 1993,
+    "maxPrice": 18,
+    "minCondition": "VG",
+    "currency": "USD",
+    "addedAt": "2026-03-19T22:52:20.150Z",
+    "chatId": "1026267297"
   }
 ]
