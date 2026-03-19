@@ -82,7 +82,10 @@ def check_alerts(alerts: list) -> list:
         year       = alert.get("year", "")
         label_year = f" ({year})" if year else ""
 
-        alert_chat_id = alert.get("chatId", TG_CHAT_ID)
+        # Soporta chatId (string) o chatIds (lista)
+        chat_ids = alert.get("chatIds") or [alert.get("chatId", TG_CHAT_ID)]
+        if isinstance(chat_ids, str):
+            chat_ids = [chat_ids]
 
         print(f"[{datetime.now():%H:%M}] Chequeando: {title}{label_year}")
         time.sleep(1.5)  # respetar rate limit de Discogs
@@ -135,7 +138,8 @@ def check_alerts(alerts: list) -> list:
                     f"👤 Vendedor: {seller}\n"
                     f"🔗 <a href='{url}'>Ver oferta</a>"
                 )
-                send_telegram(msg, alert_chat_id)
+                for cid in chat_ids:
+                    send_telegram(msg, cid)
                 print(f"  ✅ Oferta combinada notificada: {currency} {price:.2f} — {cond}")
             else:
                 print(f"  ⏳ Sin copias {min_cond}+ bajo {currency} {max_price}")
