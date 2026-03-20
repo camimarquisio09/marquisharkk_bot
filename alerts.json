@@ -390,5 +390,25 @@
     "country": "UK",
     "addedAt": "2026-03-20T02:35:43.865Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1773974185665,
+    "type": "new_copy",
+    "releaseId": 524342,
+    "title": "Graeme Laverty - Deep Dark EP",
+    "year": 2003,
+    "country": "UK",
+    "addedAt": "2026-03-20T02:36:25.665Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1773974196089,
+    "type": "new_copy",
+    "releaseId": 19090528,
+    "title": "Graeme Laverty - Deep Dark EP",
+    "year": 2003,
+    "country": "UK",
+    "addedAt": "2026-03-20T02:36:36.089Z",
+    "chatId": "1026267297"
   }
 ]
