@@ -350,5 +350,45 @@
     "country": "US",
     "addedAt": "2026-03-20T02:25:54.028Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1773973599621,
+    "type": "new_copy",
+    "releaseId": 1662215,
+    "title": "Nid Madagascar - Lledrith Lliw",
+    "year": 1990,
+    "country": "UK",
+    "addedAt": "2026-03-20T02:26:39.621Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1773974015857,
+    "type": "new_copy",
+    "releaseId": 4456905,
+    "title": "Re-Fresh Featuring P.O.O.R. Undercover - Bad To The Bone",
+    "year": 0,
+    "country": "Germany",
+    "addedAt": "2026-03-20T02:33:35.857Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1773974116913,
+    "type": "new_copy",
+    "releaseId": 127439,
+    "title": "Darko & Austin Leeds - Together / Moscow",
+    "year": 2003,
+    "country": "UK",
+    "addedAt": "2026-03-20T02:35:16.913Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1773974143865,
+    "type": "new_copy",
+    "releaseId": 3943659,
+    "title": "Darko & Austin Leeds - Together / Moscow",
+    "year": 2003,
+    "country": "UK",
+    "addedAt": "2026-03-20T02:35:43.865Z",
+    "chatId": "1026267297"
   }
 ]
