@@ -410,5 +410,16 @@
     "country": "UK",
     "addedAt": "2026-03-20T02:36:36.089Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1773974220352,
+    "type": "price_drop",
+    "releaseId": 8679132,
+    "title": "Graeme Laverty - Deep Dark EP",
+    "year": 2002,
+    "maxPrice": 40,
+    "currency": "USD",
+    "addedAt": "2026-03-20T02:37:00.352Z",
+    "chatId": "1026267297"
   }
 ]
