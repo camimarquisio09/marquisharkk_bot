@@ -421,5 +421,15 @@
     "currency": "USD",
     "addedAt": "2026-03-20T02:37:00.352Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1773974287272,
+    "type": "new_copy",
+    "releaseId": 59140,
+    "title": "DRC & Chris Demetras - Work It Out",
+    "year": 2001,
+    "country": "US",
+    "addedAt": "2026-03-20T02:38:07.272Z",
+    "chatId": "1026267297"
   }
 ]
