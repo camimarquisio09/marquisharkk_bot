@@ -286,5 +286,27 @@
     "currency": "USD",
     "addedAt": "2026-03-19T22:53:12.465Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1773960868303,
+    "type": "price_drop",
+    "releaseId": 709314,
+    "title": "Alexander Church / Jay Welsh - Midnight Sampler Vol 2",
+    "year": 2006,
+    "maxPrice": 60,
+    "currency": "USD",
+    "addedAt": "2026-03-19T22:54:28.303Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1773971842972,
+    "type": "price_drop",
+    "releaseId": 52910,
+    "title": "Alexander Church - Welcome To My World",
+    "year": 2002,
+    "maxPrice": 20,
+    "currency": "USD",
+    "addedAt": "2026-03-20T01:57:22.972Z",
+    "chatId": "1026267297"
   }
 ]
