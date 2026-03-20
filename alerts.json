@@ -340,5 +340,15 @@
     "currency": "USD",
     "addedAt": "2026-03-20T02:01:43.011Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1773973554028,
+    "type": "new_copy",
+    "releaseId": 76080,
+    "title": "Crystal Method, The - Name Of The Game",
+    "year": 2001,
+    "country": "US",
+    "addedAt": "2026-03-20T02:25:54.028Z",
+    "chatId": "1026267297"
   }
 ]
