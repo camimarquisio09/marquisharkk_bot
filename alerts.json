@@ -318,5 +318,27 @@
     "country": "UK",
     "addedAt": "2026-03-20T01:57:41.292Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1773972091122,
+    "type": "price_drop",
+    "releaseId": 47712,
+    "title": "Alexander Church - Soulkeepers / Flying Machines",
+    "year": 2001,
+    "maxPrice": 25,
+    "currency": "USD",
+    "addedAt": "2026-03-20T02:01:31.122Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1773972103011,
+    "type": "price_drop",
+    "releaseId": 17208298,
+    "title": "Alexander Church - Soulkeepers / Flying Machines",
+    "year": 2001,
+    "maxPrice": 25,
+    "currency": "USD",
+    "addedAt": "2026-03-20T02:01:43.011Z",
+    "chatId": "1026267297"
   }
 ]
