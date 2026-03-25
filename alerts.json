@@ -452,5 +452,16 @@
     "currency": "USD",
     "addedAt": "2026-03-25T13:36:33.491Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1774445804976,
+    "type": "price_drop",
+    "releaseId": 2222978,
+    "title": "Alpha (2) vs. Volldampf - E-Chip",
+    "year": 2002,
+    "maxPrice": 35,
+    "currency": "USD",
+    "addedAt": "2026-03-25T13:36:44.976Z",
+    "chatId": "1026267297"
   }
 ]
