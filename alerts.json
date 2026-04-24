@@ -120,29 +120,6 @@
     "chatId": "1026267297"
   },
   {
-    "id": 1773782419544,
-    "type": "new_copy",
-    "releaseId": 25967431,
-    "title": "S. Kol - South Plain Field",
-    "year": 2002,
-    "country": "US",
-    "addedAt": "2026-03-17T21:20:19.544Z",
-    "chatId": "1026267297"
-  },
-  {
-    "id": 1773782436471,
-    "type": "price_drop",
-    "releaseId": 197065,
-    "title": "S. Kol - South Plain Field",
-    "year": 2002,
-    "country": "US",
-    "thumb": "https://i.discogs.com/1_zb510QRIoOVm09Gag8floj74_W7udpbPgW5xpnBq8/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NzA2/NS0xNzQzMTUwMjgz/LTEyMDMuanBlZw.jpeg",
-    "maxPrice": 40,
-    "currency": "USD",
-    "addedAt": "2026-03-17T21:20:36.471Z",
-    "chatId": "1026267297"
-  },
-  {
     "id": 1773782488862,
     "type": "price_drop",
     "releaseId": 253675,
@@ -359,26 +336,6 @@
     "chatId": "1026267297"
   },
   {
-    "id": 1773974116913,
-    "type": "new_copy",
-    "releaseId": 127439,
-    "title": "Darko & Austin Leeds - Together / Moscow",
-    "year": 2003,
-    "country": "UK",
-    "addedAt": "2026-03-20T02:35:16.913Z",
-    "chatId": "1026267297"
-  },
-  {
-    "id": 1773974143865,
-    "type": "new_copy",
-    "releaseId": 3943659,
-    "title": "Darko & Austin Leeds - Together / Moscow",
-    "year": 2003,
-    "country": "UK",
-    "addedAt": "2026-03-20T02:35:43.865Z",
-    "chatId": "1026267297"
-  },
-  {
     "id": 1773974185665,
     "type": "new_copy",
     "releaseId": 524342,
@@ -460,6 +417,17 @@
     "maxPrice": 40,
     "currency": "USD",
     "addedAt": "2026-03-29T13:08:56.332Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1777028844601,
+    "type": "price_drop",
+    "releaseId": 104135,
+    "title": "Lewis (3) & Ant Miles - Sublime E.P.",
+    "year": 1994,
+    "maxPrice": 30,
+    "currency": "USD",
+    "addedAt": "2026-04-24T11:07:24.601Z",
     "chatId": "1026267297"
   }
 ]
