@@ -438,5 +438,27 @@
     "country": "Belgium",
     "addedAt": "2026-04-29T12:01:46.975Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1779583723853,
+    "type": "price_drop",
+    "releaseId": 1133439,
+    "title": "el0 - Format/p21",
+    "year": 2002,
+    "maxPrice": 100,
+    "currency": "USD",
+    "addedAt": "2026-05-24T00:48:43.853Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1779583749797,
+    "type": "price_drop",
+    "releaseId": 875834,
+    "title": "Smoka 'N' Cabana - 3 Sin Sueño",
+    "year": 2003,
+    "maxPrice": 100,
+    "currency": "USD",
+    "addedAt": "2026-05-24T00:49:09.797Z",
+    "chatId": "1026267297"
   }
 ]
