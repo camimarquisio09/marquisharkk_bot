@@ -409,37 +409,6 @@
     "chatId": "1026267297"
   },
   {
-    "id": 1777028844601,
-    "type": "price_drop",
-    "releaseId": 104135,
-    "title": "Lewis (3) & Ant Miles - Sublime E.P.",
-    "year": 1994,
-    "maxPrice": 30,
-    "currency": "USD",
-    "addedAt": "2026-04-24T11:07:24.601Z",
-    "chatId": "1026267297"
-  },
-  {
-    "id": 1777464097741,
-    "type": "new_copy",
-    "releaseId": 1239014,
-    "title": "Pixel Inc. - Morning Angel",
-    "year": 2002,
-    "country": "Belgium",
-    "addedAt": "2026-04-29T12:01:37.741Z",
-    "chatId": "1026267297"
-  },
-  {
-    "id": 1777464106975,
-    "type": "new_copy",
-    "releaseId": 961181,
-    "title": "Pixel Inc. - Morning Angel",
-    "year": 2002,
-    "country": "Belgium",
-    "addedAt": "2026-04-29T12:01:46.975Z",
-    "chatId": "1026267297"
-  },
-  {
     "id": 1779583723853,
     "type": "price_drop",
     "releaseId": 1133439,
@@ -459,6 +428,28 @@
     "maxPrice": 100,
     "currency": "USD",
     "addedAt": "2026-05-24T00:49:09.797Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1779699416215,
+    "type": "price_drop",
+    "releaseId": 5782668,
+    "title": "René Sandoval - Dog Style",
+    "year": 2005,
+    "maxPrice": 40,
+    "currency": "USD",
+    "addedAt": "2026-05-25T08:56:56.215Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1779699472519,
+    "type": "price_drop",
+    "releaseId": 1239014,
+    "title": "Pixel Inc. - Morning Angel",
+    "year": 2002,
+    "maxPrice": 100,
+    "currency": "USD",
+    "addedAt": "2026-05-25T08:57:52.519Z",
     "chatId": "1026267297"
   }
 ]
