@@ -451,5 +451,15 @@
     "currency": "USD",
     "addedAt": "2026-05-25T08:57:52.519Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1779699481711,
+    "type": "new_copy",
+    "releaseId": 961181,
+    "title": "Pixel Inc. - Morning Angel",
+    "year": 2002,
+    "country": "Belgium",
+    "addedAt": "2026-05-25T08:58:01.711Z",
+    "chatId": "1026267297"
   }
 ]
