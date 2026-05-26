@@ -461,5 +461,16 @@
     "country": "Belgium",
     "addedAt": "2026-05-25T08:58:01.711Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1779829529704,
+    "type": "price_drop",
+    "releaseId": 3685517,
+    "title": "Cristian G. Marti - Inevitable Tracks",
+    "year": 0,
+    "maxPrice": 100,
+    "currency": "USD",
+    "addedAt": "2026-05-26T21:05:29.704Z",
+    "chatId": "1026267297"
   }
 ]
