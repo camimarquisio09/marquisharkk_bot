@@ -457,5 +457,16 @@
     "currency": "USD",
     "addedAt": "2026-06-02T09:00:24.285Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1780391046291,
+    "type": "price_drop",
+    "releaseId": 2013016,
+    "title": "Iain Holder - Somebody Else",
+    "year": 0,
+    "maxPrice": 40,
+    "currency": "USD",
+    "addedAt": "2026-06-02T09:04:06.291Z",
+    "chatId": "1026267297"
   }
 ]
