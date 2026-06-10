@@ -61,17 +61,6 @@
     "chatId": "1026267297"
   },
   {
-    "id": 1773782207912,
-    "type": "new_copy",
-    "releaseId": 6930735,
-    "title": "Earth Deuley Presents Neo (12) - Kontraband",
-    "year": 2002,
-    "country": "UK",
-    "thumb": "https://i.discogs.com/dY7IyeJLIYZy_YJ0ZdHMIWc_5DjywqpxqkYcM6Qv470/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5MzA3/MzUtMTYxMDQ3ODcx/NS00NDAyLmpwZWc.jpeg",
-    "addedAt": "2026-03-17T21:16:47.912Z",
-    "chatId": "1026267297"
-  },
-  {
     "id": 1773782215816,
     "type": "price_drop",
     "releaseId": 145869,
@@ -129,16 +118,6 @@
     "chatId": "1026267297"
   },
   {
-    "id": 1773783103292,
-    "type": "new_copy",
-    "releaseId": 15557954,
-    "title": "Habersham & Numinous - Mister Cool",
-    "year": 2003,
-    "country": "UK",
-    "addedAt": "2026-03-17T21:31:43.292Z",
-    "chatId": "1026267297"
-  },
-  {
     "id": 1773783119677,
     "type": "new_copy",
     "releaseId": 489369,
@@ -179,27 +158,6 @@
     "year": 2002,
     "country": "US",
     "addedAt": "2026-03-17T21:33:02.796Z",
-    "chatId": "1026267297"
-  },
-  {
-    "id": 1773783192628,
-    "type": "new_copy",
-    "releaseId": 160536,
-    "title": "Habersham & Numinous - Mister Cool",
-    "year": 2003,
-    "country": "UK",
-    "thumb": "https://i.discogs.com/4UkGDzS-eNwMgYP59nEiGR91fQ5H72TkhUzXEw9ctFA/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDUz/Ni0xNDgyNzY1OTQx/LTQ3NjMuanBlZw.jpeg",
-    "addedAt": "2026-03-17T21:33:12.628Z",
-    "chatId": "1026267297"
-  },
-  {
-    "id": 1773808775276,
-    "type": "new_copy",
-    "releaseId": 203358,
-    "title": "Volldampf - Trainpotting",
-    "year": 2000,
-    "country": "Germany",
-    "addedAt": "2026-03-18T04:39:35.276Z",
     "chatId": "1026267297"
   },
   {
@@ -287,16 +245,6 @@
     "year": 2001,
     "country": "US",
     "addedAt": "2026-03-20T02:25:54.028Z",
-    "chatId": "1026267297"
-  },
-  {
-    "id": 1773973599621,
-    "type": "new_copy",
-    "releaseId": 1662215,
-    "title": "Nid Madagascar - Lledrith Lliw",
-    "year": 1990,
-    "country": "UK",
-    "addedAt": "2026-03-20T02:26:39.621Z",
     "chatId": "1026267297"
   },
   {
@@ -487,6 +435,39 @@
     "year": 2004,
     "country": "US",
     "addedAt": "2026-06-10T11:13:24.522Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1781090721223,
+    "type": "price_drop",
+    "releaseId": 1662215,
+    "title": "Nid Madagascar - Lledrith Lliw",
+    "year": 1990,
+    "maxPrice": 80,
+    "currency": "USD",
+    "addedAt": "2026-06-10T11:25:21.223Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1781090776166,
+    "type": "price_drop",
+    "releaseId": 160536,
+    "title": "Habersham & Numinous - Mister Cool",
+    "year": 2003,
+    "maxPrice": 60,
+    "currency": "USD",
+    "addedAt": "2026-06-10T11:26:16.166Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1781090791423,
+    "type": "price_drop",
+    "releaseId": 6930735,
+    "title": "Earth Deuley Presents Neo (12) - Kontraband",
+    "year": 2002,
+    "maxPrice": 80,
+    "currency": "USD",
+    "addedAt": "2026-06-10T11:26:31.423Z",
     "chatId": "1026267297"
   }
 ]
