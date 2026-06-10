@@ -468,5 +468,15 @@
     "currency": "USD",
     "addedAt": "2026-06-02T09:04:06.291Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1781089986914,
+    "type": "new_copy",
+    "releaseId": 339305,
+    "title": "Market House vs. Natural Rhythm - Treat You Sweet",
+    "year": 2004,
+    "country": "US",
+    "addedAt": "2026-06-10T11:13:06.914Z",
+    "chatId": "1026267297"
   }
 ]
