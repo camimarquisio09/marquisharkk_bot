@@ -469,5 +469,26 @@
     "currency": "USD",
     "addedAt": "2026-06-10T11:26:31.423Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1781545005265,
+    "type": "new_copy",
+    "releaseId": 2998543,
+    "title": "Sven B. & Dave Boon - Deep Dive",
+    "year": 2003,
+    "country": "Switzerland",
+    "addedAt": "2026-06-15T17:36:45.265Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1781545024656,
+    "type": "price_drop",
+    "releaseId": 2998543,
+    "title": "Sven B. & Dave Boon - Deep Dive",
+    "year": 2003,
+    "maxPrice": 40,
+    "currency": "USD",
+    "addedAt": "2026-06-15T17:37:04.656Z",
+    "chatId": "1026267297"
   }
 ]
