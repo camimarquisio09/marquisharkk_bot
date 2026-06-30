@@ -490,5 +490,15 @@
     "currency": "USD",
     "addedAt": "2026-06-15T17:37:04.656Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1782817069721,
+    "type": "new_copy",
+    "releaseId": 727938,
+    "title": "Groove Masters, The - Es Imposible, No Puede Ser",
+    "year": 1997,
+    "country": "Spain",
+    "addedAt": "2026-06-30T10:57:49.721Z",
+    "chatId": "1026267297"
   }
 ]
