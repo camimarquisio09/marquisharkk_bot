@@ -500,5 +500,16 @@
     "country": "Spain",
     "addedAt": "2026-06-30T10:57:49.721Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1784909336575,
+    "type": "price_drop",
+    "releaseId": 312532,
+    "title": "Midnight Blue (2) - Blessed",
+    "year": 2004,
+    "maxPrice": 45,
+    "currency": "USD",
+    "addedAt": "2026-07-24T16:08:56.575Z",
+    "chatId": "1026267297"
   }
 ]
