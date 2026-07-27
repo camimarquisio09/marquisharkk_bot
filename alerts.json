@@ -511,16 +511,5 @@
     "currency": "USD",
     "addedAt": "2026-07-24T16:08:56.575Z",
     "chatId": "1026267297"
-  },
-  {
-    "id": 1785186441182,
-    "type": "price_drop",
-    "releaseId": 871477,
-    "title": "Yakuza (2) - Busted",
-    "year": 2000,
-    "maxPrice": 50,
-    "currency": "USD",
-    "addedAt": "2026-07-27T21:07:21.182Z",
-    "chatId": "1026267297"
   }
 ]
