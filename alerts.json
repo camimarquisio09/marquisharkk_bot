@@ -542,5 +542,16 @@
     "currency": "USD",
     "addedAt": "2026-07-27T13:33:35.644Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1785159823250,
+    "type": "price_drop",
+    "releaseId": 6673249,
+    "title": "Hippopotamus Records - 続YMOのカバ",
+    "year": 1993,
+    "maxPrice": 60,
+    "currency": "USD",
+    "addedAt": "2026-07-27T13:43:43.250Z",
+    "chatId": "1026267297"
   }
 ]
