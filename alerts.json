@@ -11,19 +11,6 @@
     "chatId": "1026267297"
   },
   {
-    "id": 1773782100840,
-    "type": "price_drop",
-    "releaseId": 151762,
-    "title": "Eric B. & Rakim - Follow The Leader (Gene Carbonell Mixes)",
-    "year": 2003,
-    "country": "Canada",
-    "thumb": "https://i.discogs.com/Yy3QUERXp9QAGX9XX7tzxSP0dLGGrNfhTB75_kaovpQ/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTc2/Mi0xNDM3OTQwMTQ4/LTI5ODYuanBlZw.jpeg",
-    "maxPrice": 60,
-    "currency": "USD",
-    "addedAt": "2026-03-17T21:15:00.840Z",
-    "chatId": "1026267297"
-  },
-  {
     "id": 1773782125760,
     "type": "price_drop",
     "releaseId": 2065948,
@@ -520,6 +507,17 @@
     "year": 0,
     "country": "Belgium",
     "addedAt": "2026-07-28T01:22:39.746Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1785246714055,
+    "type": "price_drop",
+    "releaseId": 151762,
+    "title": "Eric B. & Rakim - Follow The Leader (Gene Carbonell Mixes)",
+    "year": 2003,
+    "maxPrice": 40,
+    "currency": "USD",
+    "addedAt": "2026-07-28T13:51:54.055Z",
     "chatId": "1026267297"
   }
 ]
