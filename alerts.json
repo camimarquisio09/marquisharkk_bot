@@ -511,5 +511,15 @@
     "currency": "USD",
     "addedAt": "2026-07-24T16:08:56.575Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1785201759746,
+    "type": "new_copy",
+    "releaseId": 637624,
+    "title": "Prof. Stanley - Cleopatra",
+    "year": 0,
+    "country": "Belgium",
+    "addedAt": "2026-07-28T01:22:39.746Z",
+    "chatId": "1026267297"
   }
 ]
