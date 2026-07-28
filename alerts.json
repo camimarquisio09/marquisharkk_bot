@@ -340,17 +340,6 @@
     "chatId": "1026267297"
   },
   {
-    "id": 1779699416215,
-    "type": "price_drop",
-    "releaseId": 5782668,
-    "title": "René Sandoval - Dog Style",
-    "year": 2005,
-    "maxPrice": 40,
-    "currency": "USD",
-    "addedAt": "2026-05-25T08:56:56.215Z",
-    "chatId": "1026267297"
-  },
-  {
     "id": 1779699472519,
     "type": "price_drop",
     "releaseId": 1239014,
@@ -518,6 +507,17 @@
     "maxPrice": 40,
     "currency": "USD",
     "addedAt": "2026-07-28T13:51:54.055Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1785246757776,
+    "type": "price_drop",
+    "releaseId": 5782668,
+    "title": "René Sandoval - Dog Style",
+    "year": 2005,
+    "maxPrice": 30,
+    "currency": "USD",
+    "addedAt": "2026-07-28T13:52:37.776Z",
     "chatId": "1026267297"
   }
 ]
