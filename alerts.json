@@ -519,5 +519,26 @@
     "currency": "USD",
     "addedAt": "2026-07-28T13:52:37.776Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1785871493863,
+    "type": "new_copy",
+    "releaseId": 4126477,
+    "title": "Pocket - Full Grip",
+    "year": 0,
+    "country": "Australia",
+    "addedAt": "2026-08-04T19:24:53.863Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1785871505616,
+    "type": "price_drop",
+    "releaseId": 82307,
+    "title": "Pocket - Full Grip",
+    "year": 2002,
+    "maxPrice": 60,
+    "currency": "USD",
+    "addedAt": "2026-08-04T19:25:05.616Z",
+    "chatId": "1026267297"
   }
 ]
