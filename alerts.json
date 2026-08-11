@@ -542,17 +542,6 @@
     "chatId": "1026267297"
   },
   {
-    "id": 1786490950892,
-    "type": "price_drop",
-    "releaseId": 445873,
-    "title": "Acacio Moura / Mimi (3) - Energize / Uatasound",
-    "year": 2002,
-    "maxPrice": 100,
-    "currency": "USD",
-    "addedAt": "2026-08-11T23:29:10.892Z",
-    "chatId": "1026267297"
-  },
-  {
     "id": 1786490961861,
     "type": "new_copy",
     "releaseId": 12199197,
