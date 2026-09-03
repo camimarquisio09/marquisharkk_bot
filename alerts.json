@@ -774,5 +774,16 @@
     "country": "US",
     "addedAt": "2026-09-03T09:56:30.875Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1788429527969,
+    "type": "price_drop",
+    "releaseId": 96133,
+    "title": "Phaedra - Baselines Section 001",
+    "year": 1998,
+    "maxPrice": 30,
+    "currency": "USD",
+    "addedAt": "2026-09-03T09:58:47.969Z",
+    "chatId": "1026267297"
   }
 ]
