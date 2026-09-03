@@ -580,5 +580,199 @@
     "country": "Italy",
     "addedAt": "2026-08-27T15:53:47.666Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1788428975387,
+    "type": "new_copy",
+    "releaseId": 4145057,
+    "title": "Dion Marshall / O. H. I. - Alleyway / Dark Wave Shimmer",
+    "year": 1996,
+    "country": "US",
+    "addedAt": "2026-09-03T09:49:35.387Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788428988699,
+    "type": "new_copy",
+    "releaseId": 461107,
+    "title": "John Tejada / O. H. I. - Sierra / The Force",
+    "year": 1996,
+    "country": "US",
+    "addedAt": "2026-09-03T09:49:48.699Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429003555,
+    "type": "new_copy",
+    "releaseId": 13058451,
+    "title": "Marvin Don - That's Right",
+    "year": 2001,
+    "country": "UK",
+    "addedAt": "2026-09-03T09:50:03.555Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429020675,
+    "type": "new_copy",
+    "releaseId": 844880,
+    "title": "Public Access - Gandalf's Secret Strain",
+    "year": 2005,
+    "country": "US",
+    "addedAt": "2026-09-03T09:50:20.675Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429055059,
+    "type": "price_drop",
+    "releaseId": 13484797,
+    "title": "Sistem EX - Retrum",
+    "year": 1997,
+    "maxPrice": 80,
+    "currency": "USD",
+    "addedAt": "2026-09-03T09:50:55.059Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429069643,
+    "type": "new_copy",
+    "releaseId": 8775453,
+    "title": "Manhattan People - The Future Disco EP",
+    "year": 0,
+    "country": "US",
+    "addedAt": "2026-09-03T09:51:09.643Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429081107,
+    "type": "new_copy",
+    "releaseId": 1017908,
+    "title": "Deep Code - 1000 Nights",
+    "year": 0,
+    "country": "US",
+    "addedAt": "2026-09-03T09:51:21.107Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429104683,
+    "type": "price_drop",
+    "releaseId": 18653152,
+    "title": "Club Buster - Dub Busters ",
+    "year": 0,
+    "maxPrice": 50,
+    "currency": "USD",
+    "addedAt": "2026-09-03T09:51:44.683Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429121739,
+    "type": "price_drop",
+    "releaseId": 2889430,
+    "title": "Nimex - Listen & Dance E.P.",
+    "year": 1999,
+    "maxPrice": 60,
+    "currency": "USD",
+    "addedAt": "2026-09-03T09:52:01.739Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429164715,
+    "type": "new_copy",
+    "releaseId": 932265,
+    "title": "Over 25's - E.P.",
+    "year": 1997,
+    "country": "UK",
+    "addedAt": "2026-09-03T09:52:44.715Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429177194,
+    "type": "new_copy",
+    "releaseId": 301007,
+    "title": "Daddy J & Face - Wax Affair EP",
+    "year": 2004,
+    "country": "US",
+    "addedAt": "2026-09-03T09:52:57.194Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429187514,
+    "type": "price_drop",
+    "releaseId": 348455,
+    "title": "Ahman & Litex - The Deep Chords EP",
+    "year": 2002,
+    "maxPrice": 60,
+    "currency": "USD",
+    "addedAt": "2026-09-03T09:53:07.514Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429196866,
+    "type": "new_copy",
+    "releaseId": 9708700,
+    "title": "Embreo - Freekin / That's Right",
+    "year": 0,
+    "country": "UK",
+    "addedAt": "2026-09-03T09:53:16.866Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429216050,
+    "type": "new_copy",
+    "releaseId": 3546442,
+    "title": "Ten Lovers Allstars - The Kent",
+    "year": 1999,
+    "country": "UK",
+    "addedAt": "2026-09-03T09:53:36.050Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429253746,
+    "type": "new_copy",
+    "releaseId": 1803909,
+    "title": "Bubble Factory - Untitled",
+    "year": 1999,
+    "country": "UK",
+    "addedAt": "2026-09-03T09:54:13.746Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429282778,
+    "type": "new_copy",
+    "releaseId": 11986009,
+    "title": "Remote Kontrol - Untitled",
+    "year": 1996,
+    "country": "UK",
+    "addedAt": "2026-09-03T09:54:42.778Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429328162,
+    "type": "new_copy",
+    "releaseId": 15817654,
+    "title": "Fauvrelle - Heart Grabbers EP",
+    "year": 1998,
+    "country": "Portugal",
+    "addedAt": "2026-09-03T09:55:28.162Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429357754,
+    "type": "new_copy",
+    "releaseId": 8240702,
+    "title": "Seth Collins - DMT3 Presents Seth Collins",
+    "year": 2003,
+    "country": null,
+    "addedAt": "2026-09-03T09:55:57.754Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788429390875,
+    "type": "new_copy",
+    "releaseId": 480802,
+    "title": "Jaywood - The Dirty Tricks EP",
+    "year": 2005,
+    "country": "US",
+    "addedAt": "2026-09-03T09:56:30.875Z",
+    "chatId": "1026267297"
   }
 ]
