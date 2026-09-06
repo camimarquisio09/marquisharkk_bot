@@ -795,5 +795,15 @@
     "country": "Argentina",
     "addedAt": "2026-09-06T23:00:54.714Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1788735673660,
+    "type": "new_copy",
+    "releaseId": 29629237,
+    "title": "Dillom - Post Mortem ",
+    "year": 2023,
+    "country": "Argentina",
+    "addedAt": "2026-09-06T23:01:13.660Z",
+    "chatId": "1026267297"
   }
 ]
