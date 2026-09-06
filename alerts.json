@@ -785,5 +785,15 @@
     "currency": "USD",
     "addedAt": "2026-09-03T09:58:47.969Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1788735654714,
+    "type": "new_copy",
+    "releaseId": 27389832,
+    "title": "Dillom - Post Mortem",
+    "year": 2023,
+    "country": "Argentina",
+    "addedAt": "2026-09-06T23:00:54.714Z",
+    "chatId": "1026267297"
   }
 ]
