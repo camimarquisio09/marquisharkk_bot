@@ -805,5 +805,16 @@
     "country": "Argentina",
     "addedAt": "2026-09-06T23:01:13.660Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1788815330301,
+    "type": "price_drop",
+    "releaseId": 1217009,
+    "title": "Dat Oven - Jet Set",
+    "year": 1998,
+    "maxPrice": 50,
+    "currency": "USD",
+    "addedAt": "2026-09-07T21:08:50.301Z",
+    "chatId": "1026267297"
   }
 ]
