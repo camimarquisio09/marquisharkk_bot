@@ -858,5 +858,15 @@
     "country": "Italy",
     "addedAt": "2026-09-08T17:01:25.538Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1788906263707,
+    "type": "new_copy",
+    "releaseId": 2030020,
+    "title": "X-Rhythm - I'll Ride You",
+    "year": 1997,
+    "country": "Switzerland",
+    "addedAt": "2026-09-08T22:24:23.707Z",
+    "chatId": "1026267297"
   }
 ]
