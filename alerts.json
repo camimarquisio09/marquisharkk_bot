@@ -827,5 +827,16 @@
     "currency": "USD",
     "addedAt": "2026-09-08T14:33:11.002Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1788879626357,
+    "type": "price_drop",
+    "releaseId": 31503035,
+    "title": "Coringa - Coringa Presents Makin' Up For A Friend E.P.",
+    "year": 2004,
+    "maxPrice": 80,
+    "currency": "USD",
+    "addedAt": "2026-09-08T15:00:26.357Z",
+    "chatId": "1026267297"
   }
 ]
