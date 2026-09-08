@@ -838,5 +838,25 @@
     "currency": "USD",
     "addedAt": "2026-09-08T15:00:26.357Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1788886879194,
+    "type": "new_copy",
+    "releaseId": 1717224,
+    "title": "Dj's United (6) - Telephone Call",
+    "year": 1997,
+    "country": "Italy",
+    "addedAt": "2026-09-08T17:01:19.194Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1788886885538,
+    "type": "new_copy",
+    "releaseId": 28123684,
+    "title": "Dj's United (6) - Telephone Call",
+    "year": 1997,
+    "country": "Italy",
+    "addedAt": "2026-09-08T17:01:25.538Z",
+    "chatId": "1026267297"
   }
 ]
