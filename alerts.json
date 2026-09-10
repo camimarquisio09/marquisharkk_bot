@@ -868,5 +868,16 @@
     "country": "Switzerland",
     "addedAt": "2026-09-08T22:24:23.707Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1789052088908,
+    "type": "price_drop",
+    "releaseId": 2301360,
+    "title": "Marco Cordi - Electronika E.P. Vol. 1",
+    "year": 1997,
+    "maxPrice": 100,
+    "currency": "USD",
+    "addedAt": "2026-09-10T14:54:48.908Z",
+    "chatId": "1026267297"
   }
 ]
