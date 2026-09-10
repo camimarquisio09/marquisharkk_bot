@@ -879,5 +879,15 @@
     "currency": "USD",
     "addedAt": "2026-09-10T14:54:48.908Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1789052399042,
+    "type": "new_copy",
+    "releaseId": 4028402,
+    "title": "Durst 20 - Wheeler",
+    "year": 0,
+    "country": "UK",
+    "addedAt": "2026-09-10T14:59:59.042Z",
+    "chatId": "1026267297"
   }
 ]
