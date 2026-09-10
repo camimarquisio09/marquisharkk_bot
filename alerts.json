@@ -889,5 +889,15 @@
     "country": "UK",
     "addedAt": "2026-09-10T14:59:59.042Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1789078369990,
+    "type": "new_copy",
+    "releaseId": 11404259,
+    "title": "Introtom - Citizen Of Galaxy",
+    "year": 0,
+    "country": "Germany",
+    "addedAt": "2026-09-10T22:12:49.990Z",
+    "chatId": "1026267297"
   }
 ]
