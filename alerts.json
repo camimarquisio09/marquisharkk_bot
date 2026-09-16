@@ -910,5 +910,16 @@
     "currency": "USD",
     "addedAt": "2026-09-16T11:06:25.263Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1789585079291,
+    "type": "price_drop",
+    "releaseId": 38027640,
+    "title": "Nephews, ICTV, Emanuele Barilli - OH001",
+    "year": 2026,
+    "maxPrice": 40,
+    "currency": "USD",
+    "addedAt": "2026-09-16T18:57:59.291Z",
+    "chatId": "1026267297"
   }
 ]
