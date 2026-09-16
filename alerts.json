@@ -899,5 +899,16 @@
     "country": "Germany",
     "addedAt": "2026-09-10T22:12:49.990Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1789556785263,
+    "type": "price_drop",
+    "releaseId": 37786476,
+    "title": "Casio the Calculator - Elementary Calculations",
+    "year": 2026,
+    "maxPrice": 25,
+    "currency": "USD",
+    "addedAt": "2026-09-16T11:06:25.263Z",
+    "chatId": "1026267297"
   }
 ]
