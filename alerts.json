@@ -910,5 +910,16 @@
     "currency": "USD",
     "addedAt": "2026-09-16T18:57:59.291Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1789644872091,
+    "type": "price_drop",
+    "releaseId": 8240702,
+    "title": "Seth Collins - DMT3 Presents Seth Collins",
+    "year": 2003,
+    "maxPrice": 100,
+    "currency": "USD",
+    "addedAt": "2026-09-17T11:34:32.091Z",
+    "chatId": "1026267297"
   }
 ]
