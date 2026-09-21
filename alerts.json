@@ -921,5 +921,25 @@
     "currency": "USD",
     "addedAt": "2026-09-17T11:34:32.091Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1790023884753,
+    "type": "new_copy",
+    "releaseId": 1087679,
+    "title": "Karl Axel Bissler - Heat",
+    "year": 2007,
+    "country": "US",
+    "addedAt": "2026-09-21T20:51:24.753Z",
+    "chatId": "1026267297"
+  },
+  {
+    "id": 1790023887505,
+    "type": "new_copy",
+    "releaseId": 6534623,
+    "title": "Karl Axel Bissler - Heat",
+    "year": 2007,
+    "country": "US",
+    "addedAt": "2026-09-21T20:51:27.505Z",
+    "chatId": "1026267297"
   }
 ]
