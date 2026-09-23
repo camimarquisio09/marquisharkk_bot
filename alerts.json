@@ -941,5 +941,15 @@
     "country": "US",
     "addedAt": "2026-09-21T20:51:27.505Z",
     "chatId": "1026267297"
+  },
+  {
+    "id": 1790163950280,
+    "type": "new_copy",
+    "releaseId": 11419692,
+    "title": "Mulik & Maniac - Waves 2006",
+    "year": 2006,
+    "country": "Germany",
+    "addedAt": "2026-09-23T11:45:50.280Z",
+    "chatId": "1026267297"
   }
 ]
